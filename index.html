@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Atlas técnico de aparelhos, exercícios e biomecânica do movimento.">
+  <title>Atlas do Movimento — aparelhos e biomecânica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Início"><span>ATLAS DO MOVIMENTO</span><small>aparelhos · exercício · biomecânica</small></a>
+    <button class="menu-button" aria-expanded="false" aria-controls="nav">Aparelhos</button>
+    <nav id="nav" aria-label="Aparelhos"></nav>
+  </header>
+  <main id="top">
+    <section class="intro">
+      <div>
+        <p class="eyebrow">IDENTIFICAÇÃO POR PLAQUETA · 6 APARELHOS</p>
+        <h1>Conheça o aparelho.<br><em>Entenda o movimento.</em></h1>
+        <p class="lead">Referência técnica construída a partir de equipamentos identificados em campo. Consulte regulagem, execução, biomecânica e documentação sem confundir modelos semelhantes.</p>
+      </div>
+      <div class="intro-tools">
+        <label for="search">Localizar aparelho ou músculo</label>
+        <input id="search" type="search" placeholder="Ex.: posterior, remada, G7-S72" autocomplete="off">
+        <p><strong id="count">6</strong> fichas confirmadas</p>
+      </div>
+    </section>
+    <section class="catalog" id="catalog" aria-live="polite"></section>
+    <p class="empty" id="empty" hidden>Nenhum aparelho corresponde à busca.</p>
+    <section class="method">
+      <p class="eyebrow">CRITÉRIO DOCUMENTAL</p>
+      <h2>O que significa “confirmado”</h2>
+      <div class="method-grid">
+        <p><b>01 · Evidência</b><br>O código do modelo foi lido diretamente na plaqueta fotografada no equipamento.</p>
+        <p><b>02 · Correspondência</b><br>Nome e código foram conferidos no catálogo ou na ficha técnica da Matrix.</p>
+        <p><b>03 · Limite</b><br>As letras B/BH indicam variantes. A plaqueta de instruções, isoladamente, não confirma qual configuração foi instalada.</p>
+      </div>
+    </section>
+  </main>
+  <dialog id="photo-dialog">
+    <button class="dialog-close" aria-label="Fechar">×</button>
+    <img id="dialog-image" alt="">
+    <p id="dialog-caption"></p>
+  </dialog>
+  <footer>
+    <p>Atlas do Movimento · Fontes técnicas vinculadas em cada ficha</p>
+    <a href="#top">Voltar ao topo ↑</a>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
