@@ -1,7 +1,7 @@
 const machines = [
   {
     id:'g3-s30', model:'G3-S30-03', name:'Aura Lat Pulldown', pt:'Puxada alta / dorsal',
-    image:'assets/images/G3-S30.webp', drive:'https://drive.google.com/file/d/125CJR1t97KKdhKQk5c1eceMK_pJV5FwU/view',
+    image:'assets/images/G3-S30.webp',
     primary:'Latíssimo do dorso', secondary:'bíceps, braquial, redondo maior e estabilizadores escapulares',
     setup:['Regule o apoio das coxas para impedir que o corpo seja elevado pela carga.','Segure a barra com punhos neutros e simétricos; mantenha o tronco alto.','Inicie com as escápulas controladas, sem elevar excessivamente os ombros.'],
     execute:['Puxe os cotovelos para baixo, conduzindo a barra à parte superior do peito.','Use leve inclinação do tronco, sem transformar o movimento em uma remada.','Retorne devagar até alongar o dorsal, mantendo controle da pilha de pesos.'],
@@ -13,7 +13,7 @@ const machines = [
   },
   {
     id:'g7-s23', model:'G7-S23', name:'Ultra Converging Shoulder Press', pt:'Desenvolvimento de ombros',
-    image:'assets/images/G7-S23.webp', drive:'https://drive.google.com/file/d/10B_7-NPXmVnpw_50E4WOPIBNShWOgmiy/view',
+    image:'assets/images/G7-S23.webp',
     primary:'Deltoide anterior e medial', secondary:'tríceps e porção clavicular do peitoral maior',
     setup:['Ajuste o assento para que as manoplas iniciem aproximadamente na altura dos ombros.','Mantenha cabeça, coluna torácica e quadril apoiados.','Escolha a pegada mais confortável, sem forçar extensão excessiva do punho.'],
     execute:['Empurre para cima acompanhando a trajetória convergente dos braços.','Mantenha antebraços alinhados à direção da força.','Desça de forma controlada até a amplitude tolerada pelo ombro, sem perder o apoio.'],
@@ -25,7 +25,7 @@ const machines = [
   },
   {
     id:'g7-s34', model:'G7-S34', name:'Ultra Diverging Seated Row', pt:'Remada sentada',
-    image:'assets/images/G7-S34.webp', drive:'https://drive.google.com/file/d/1orab7WZkgLiJWWwObZvPaYTQtEQaFvo_/view',
+    image:'assets/images/G7-S34.webp',
     primary:'Latíssimo e região média das costas', secondary:'romboides, trapézio médio/inferior, deltoide posterior e flexores do cotovelo',
     setup:['Regule o assento para alinhar o peito ao apoio e as manoplas a uma altura confortável.','Apoie os pés e mantenha o esterno no suporte.','Comece com braços alongados sem arredondar exageradamente a coluna.'],
     execute:['Conduza os cotovelos para trás, permitindo que os braços sigam a trajetória divergente.','Aproxime as escápulas sem projetar a cabeça à frente.','Retorne controlando a protração das escápulas e o alongamento das costas.'],
@@ -37,7 +37,7 @@ const machines = [
   },
   {
     id:'g7-s51', model:'G7-S51', name:'Ultra Abdominal Crunch', pt:'Abdominal na máquina',
-    image:'assets/images/G7-S51.webp', drive:'https://drive.google.com/file/d/1Glvi55MRJTbn_ARe_0SWEmWIXm44Y8WM/view',
+    image:'assets/images/G7-S51.webp',
     primary:'Reto abdominal', secondary:'oblíquos e estabilizadores do tronco',
     setup:['Sente-se com quadril e costas bem posicionados no encosto.','Acomode braços/cotovelos nos apoios e mantenha os pés estáveis.','Selecione carga que permita flexionar o tronco sem puxar com os braços.'],
     execute:['Aproxime gradualmente caixa torácica e pelve, flexionando a coluna.','Expire durante a fase de encurtamento.','Retorne até o alongamento confortável, sem deixar a pilha cair.'],
@@ -49,7 +49,7 @@ const machines = [
   },
   {
     id:'g7-s40', model:'G7-S40', name:'Ultra Independent Biceps Curl', pt:'Rosca bíceps independente',
-    image:'assets/images/G7-S40.webp', drive:'https://drive.google.com/file/d/1Bk68VkNMw3162bQofmB86znHQVyfYCkd/view',
+    image:'assets/images/G7-S40.webp',
     primary:'Bíceps braquial', secondary:'braquial e braquiorradial',
     setup:['Ajuste o assento para apoiar completamente os braços, alinhando os cotovelos ao eixo de rotação da máquina.','Encoste o peito no apoio e mantenha os ombros baixos e estáveis.','Segure as manoplas com punhos neutros, sem quebrar o alinhamento com o antebraço.'],
     execute:['Flexione os cotovelos sem retirar os braços do apoio.','Use os dois lados juntos ou alternadamente, preservando a mesma amplitude.','Estenda os cotovelos de modo controlado, sem deixar a pilha de pesos bater.'],
@@ -61,7 +61,7 @@ const machines = [
   },
   {
     id:'g7-s70', model:'G7-S70', name:'Ultra Leg Press', pt:'Leg press',
-    image:'assets/images/G7-S70.webp', drive:'https://drive.google.com/file/d/1XNSOrQ_56QORN-OqLciVVQu2Bi_KLR9z/view',
+    image:'assets/images/G7-S70.webp',
     primary:'Quadríceps e glúteo máximo', secondary:'isquiotibiais, adutores e panturrilhas como estabilizadores',
     setup:['Ajuste o assento para iniciar com joelhos e quadris flexionados em amplitude confortável, sem retirar a pelve do encosto.','Posicione os pés inteiros na plataforma, aproximadamente na largura dos quadris.','Alinhe joelhos e pés e selecione uma carga que permita controle desde a primeira repetição.'],
     execute:['Empurre a plataforma estendendo joelhos e quadris ao mesmo tempo.','Mantenha joelhos acompanhando a direção dos pés e a lombar apoiada.','Retorne lentamente até a profundidade em que a pelve permaneça estável.'],
@@ -73,7 +73,7 @@ const machines = [
   },
   {
     id:'g7-s72', model:'G7-S72', name:'Ultra Seated Leg Curl', pt:'Flexora sentada',
-    image:'assets/images/G7-S72.webp', drive:'https://drive.google.com/file/d/1BbOM73Cz4WeZa6Mt_qvOvwAYse8CJvAd/view',
+    image:'assets/images/G7-S72.webp',
     primary:'Isquiotibiais', secondary:'gastrocnêmio e musculatura estabilizadora do quadril',
     setup:['Alinhe o eixo do joelho ao pivô amarelo da máquina.','Apoie o rolo logo acima dos calcanhares e fixe a coxa com o apoio superior.','Ajuste a posição inicial para alongamento confortável, mantendo quadril no assento.'],
     execute:['Flexione os joelhos levando os calcanhares para baixo e para trás.','Mantenha quadril, coxas e tronco estáveis.','Retorne devagar sem perder o alinhamento do joelho com o pivô.'],
@@ -85,7 +85,7 @@ const machines = [
   },
   {
     id:'g7-s73', model:'G7-S73', name:'Ultra Prone Leg Curl', pt:'Mesa flexora',
-    image:'assets/images/G7-S73.webp', drive:'https://drive.google.com/file/d/1NVZ3u40J3MLfBzyOIPTRKexVnnIiLf-4/view',
+    image:'assets/images/G7-S73.webp',
     primary:'Isquiotibiais', secondary:'gastrocnêmio e estabilizadores do quadril',
     setup:['Deite-se e alinhe os joelhos ao pivô da máquina.','Ajuste o rolo logo acima dos calcanhares.','Acomode quadril e tronco no apoio angulado e segure as manoplas.'],
     execute:['Flexione os joelhos aproximando os calcanhares dos glúteos.','Mantenha a pelve apoiada, sem elevar o quadril.','Desça controladamente até quase estender os joelhos.'],
@@ -97,7 +97,7 @@ const machines = [
   },
   {
     id:'g7-s74', model:'G7-S74', name:'Ultra Hip Adductor', pt:'Adutora de quadril',
-    image:'assets/images/G7-S74.webp', drive:'https://drive.google.com/file/d/1GUBGJITt3VH7hfc6y2pJ0eUljSgk7i9q/view',
+    image:'assets/images/G7-S74.webp',
     primary:'Adutores do quadril', secondary:'grácil e estabilizadores do tronco e da pelve',
     setup:['Sente-se com costas e pelve apoiadas e posicione a face interna das coxas nos apoios.','Regule a abertura inicial em amplitude confortável, sem forçar virilha ou quadril.','Segure as alças e mantenha pés apoiados nos suportes.'],
     execute:['Aproxime as coxas de forma simétrica até a amplitude controlável.','Mantenha o tronco parado e evite girar os joelhos para ganhar força.','Retorne devagar, controlando a abertura das pernas.'],
@@ -109,7 +109,7 @@ const machines = [
   },
   {
     id:'g7-s75', model:'G7-S75', name:'Ultra Hip Abductor', pt:'Abdutora de quadril',
-    image:'assets/images/G7-S75.webp', drive:'https://drive.google.com/file/d/1Na-f36CCho0mJbh5qPQcE6FOtS_oiVzs/view',
+    image:'assets/images/G7-S75.webp',
     primary:'Glúteo médio e glúteo mínimo', secondary:'tensor da fáscia lata e estabilizadores da pelve',
     setup:['Sente-se com costas e pelve apoiadas e posicione a face externa das coxas nos apoios.','Ajuste a posição inicial sem comprimir os joelhos e mantenha os pés nos suportes.','Segure as alças e escolha carga que permita abrir as pernas sem impulso.'],
     execute:['Afaste as coxas contra os apoios, mantendo a pelve estável.','Pare antes de compensar com rotação ou inclinação do tronco.','Retorne lentamente até os apoios se aproximarem, sem deixar a pilha bater.'],
@@ -136,7 +136,7 @@ function card(m){return `<article class="machine" id="${m.id}" data-search="${es
   <section class="tab-panel" data-index="1" hidden><h3>Sequência do movimento</h3>${list(m.execute)}</section>
   <section class="tab-panel" data-index="2" hidden><h3>Leitura biomecânica</h3><p>${m.bio}</p><p class="note">A trajetória da máquina orienta o movimento, mas não substitui ajuste individual nem avaliação profissional em caso de dor.</p></section>
   <section class="tab-panel" data-index="3" hidden><h3>Erros frequentes</h3>${list(m.errors)}</section>
-  <section class="tab-panel" data-index="4" hidden><h3>Fontes e mídia</h3><div class="resources"><a class="resource" href="${m.product}" target="_blank" rel="noopener"><small>FABRICANTE</small><b>Página oficial Matrix ↗</b></a><a class="resource" href="${m.manual}" target="_blank" rel="noopener"><small>DOCUMENTAÇÃO LOCAL</small><b>Abrir manual / guia técnico ↗</b></a><a class="resource" href="${m.video}" target="_blank" rel="noopener"><small>VÍDEO</small><b>Demonstração do movimento ↗</b></a></div><p class="source-note"><a href="${m.drive}" target="_blank" rel="noopener">Abrir arquivo de origem no Google Drive</a></p></section>
+  <section class="tab-panel" data-index="4" hidden><h3>Fontes e mídia</h3><div class="resources"><a class="resource" href="${m.product}" target="_blank" rel="noopener"><small>FABRICANTE</small><b>Página oficial Matrix ↗</b></a><a class="resource" href="${m.manual}" target="_blank" rel="noopener"><small>DOCUMENTAÇÃO INCORPORADA</small><b>Abrir manual / guia técnico ↗</b></a><a class="resource" href="${m.video}" target="_blank" rel="noopener"><small>VÍDEO</small><b>Demonstração do movimento ↗</b></a></div></section>
   </div></article>`}
 
 catalog.innerHTML=machines.map(card).join('');
