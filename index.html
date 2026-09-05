@@ -16,36 +16,41 @@
     <button class="menu-button" aria-expanded="false" aria-controls="nav">Aparelhos</button>
     <nav id="nav" aria-label="Aparelhos"></nav>
   </header>
+
   <main id="top">
     <section class="intro">
       <div>
-        <p class="eyebrow">IDENTIFICAÇÃO POR PLAQUETA · 6 APARELHOS</p>
+        <p class="eyebrow">NÚCLEO 1 · EQUIPAMENTOS DE ACADEMIA · 10 APARELHOS</p>
         <h1>Conheça o aparelho.<br><em>Entenda o movimento.</em></h1>
-        <p class="lead">Referência técnica construída a partir de equipamentos identificados em campo. Consulte regulagem, execução, biomecânica e documentação sem confundir modelos semelhantes.</p>
+        <p class="lead">Catálogo técnico construído a partir dos equipamentos identificados em campo e dos respectivos manuais. Consulte função, regulagem, execução, biomecânica e documentação incorporada ao site.</p>
       </div>
       <div class="intro-tools">
         <label for="search">Localizar aparelho ou músculo</label>
         <input id="search" type="search" placeholder="Ex.: posterior, remada, G7-S72" autocomplete="off">
-        <p><strong id="count">6</strong> fichas confirmadas</p>
+        <p><strong id="count">10</strong> fichas confirmadas</p>
       </div>
     </section>
+
     <section class="catalog" id="catalog" aria-live="polite"></section>
     <p class="empty" id="empty" hidden>Nenhum aparelho corresponde à busca.</p>
+
     <section class="method">
       <p class="eyebrow">CRITÉRIO DOCUMENTAL</p>
       <h2>O que significa “confirmado”</h2>
       <div class="method-grid">
-        <p><b>01 · Evidência</b><br>O código do modelo foi lido diretamente na plaqueta fotografada no equipamento.</p>
-        <p><b>02 · Correspondência</b><br>Nome e código foram conferidos no catálogo ou na ficha técnica da Matrix.</p>
-        <p><b>03 · Limite</b><br>As letras B/BH indicam variantes. A plaqueta de instruções, isoladamente, não confirma qual configuração foi instalada.</p>
+        <p><b>01 · Identificação</b><br>O código do modelo observado no equipamento foi associado à documentação correspondente.</p>
+        <p><b>02 · Fonte técnica</b><br>Nome, imagem, função e regulagens foram conferidos nos manuais e materiais técnicos da Matrix.</p>
+        <p><b>03 · Limite</b><br>A ficha descreve o modelo identificado; ajustes individuais e dor exigem orientação presencial de profissional habilitado.</p>
       </div>
     </section>
   </main>
+
   <dialog id="photo-dialog">
     <button class="dialog-close" aria-label="Fechar">×</button>
     <img id="dialog-image" alt="">
     <p id="dialog-caption"></p>
   </dialog>
+
   <footer>
     <p>Atlas do Movimento · Fontes técnicas vinculadas em cada ficha</p>
     <a href="#top">Voltar ao topo ↑</a>
