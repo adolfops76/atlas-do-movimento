@@ -119,18 +119,6 @@ const machines = [
     manual:'assets/manuals/G7-S75.pdf',
     video:'https://www.youtube.com/results?search_query=Matrix+G7-S75+Ultra+Hip+Abductor'
   },
-  {
-    id:'g3-ms52', model:'G3-MS52', name:'Aura Triceps Pressdown', pt:'Tríceps na polia',
-    image:'assets/images/G3-MS52.png', primary:'Tríceps braquial', secondary:'estabilizadores do ombro e antebraço',
-    bio:'A extensão do cotovelo é realizada na polia alta. A regulagem da altura e a escolha da corda permitem manter os cotovelos próximos ao tronco e controlar a trajetória.',
-    product:'https://br.matrixfitness.com/ptb/strength/multi-station/triceps-pressdown', manual:'', video:'https://www.youtube.com/results?search_query=Matrix+G3-MS52+Triceps+Pressdown'
-  },
-  {
-    id:'g3-s52', model:'G3-S52', name:'Aura Back Extension', pt:'Extensor lombar',
-    image:'assets/images/G3-S52.png', primary:'Eretores da coluna', secondary:'glúteos, isquiotibiais e estabilizadores do tronco',
-    bio:'O equipamento orienta a extensão do quadril e da coluna com apoio do tronco. O movimento deve ser curto e controlado, preservando a posição neutra da coluna.',
-    product:'https://world.matrixfitness.com/eng/strength/single-station/g3-s52-back-extension', manual:'', video:'https://www.youtube.com/results?search_query=Matrix+G3-S52+Back+Extension'
-  }
 ];
 
 const catalog=document.querySelector('#catalog');
