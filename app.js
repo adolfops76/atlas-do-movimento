@@ -118,6 +118,18 @@ const machines = [
     product:'https://world.matrixfitness.com/eng/strength/single-station/g7-s75-hip-abductor',
     manual:'assets/manuals/G7-S75.pdf',
     video:'https://www.youtube.com/results?search_query=Matrix+G7-S75+Ultra+Hip+Abductor'
+  },
+  {
+    id:'g3-ms52', model:'G3-MS52', name:'Aura Triceps Pressdown', pt:'Tríceps na polia',
+    image:'assets/images/G3-MS52.png', primary:'Tríceps braquial', secondary:'estabilizadores do ombro e antebraço',
+    bio:'A extensão do cotovelo é realizada na polia alta. A regulagem da altura e a escolha da corda permitem manter os cotovelos próximos ao tronco e controlar a trajetória.',
+    product:'https://br.matrixfitness.com/ptb/strength/multi-station/triceps-pressdown', manual:'', video:'https://www.youtube.com/results?search_query=Matrix+G3-MS52+Triceps+Pressdown'
+  },
+  {
+    id:'g3-s52', model:'G3-S52', name:'Aura Back Extension', pt:'Extensor lombar',
+    image:'assets/images/G3-S52.png', primary:'Eretores da coluna', secondary:'glúteos, isquiotibiais e estabilizadores do tronco',
+    bio:'O equipamento orienta a extensão do quadril e da coluna com apoio do tronco. O movimento deve ser curto e controlado, preservando a posição neutra da coluna.',
+    product:'https://world.matrixfitness.com/eng/strength/single-station/g3-s52-back-extension', manual:'', video:'https://www.youtube.com/results?search_query=Matrix+G3-S52+Back+Extension'
   }
 ];
 
@@ -130,13 +142,11 @@ function card(m){return `<article class="machine" id="${m.id}" data-search="${es
   <div class="machine-visual"><img src="${m.image}" alt="Imagem técnica do equipamento ${esc(m.name)}" loading="lazy"><span class="model-tag">${m.model}</span><button class="photo-button" data-photo="${m.image}" data-caption="Imagem do equipamento extraída do manual · ${esc(m.model)} · abrir em tamanho maior">Ampliar imagem do equipamento ↗</button></div>
   <div class="machine-content"><div class="machine-heading"><h2>${m.pt}<span>${m.name}</span></h2><p class="muscle">ALVO PRINCIPAL<b>${m.primary}</b>${m.secondary}</p></div>
   <div class="tabs" role="tablist" aria-label="Conteúdo de ${esc(m.pt)}">
-    ${['Regulagem','Execução','Biomecânica','Erros','Documentos'].map((x,i)=>`<button class="tab" role="tab" aria-selected="${i===0}" data-panel="${i}">${x}</button>`).join('')}
+    ${['Função','Biomecânica','Documentos'].map((x,i)=>`<button class="tab" role="tab" aria-selected="${i===0}" data-panel="${i}">${x}</button>`).join('')}
   </div>
-  <section class="tab-panel" data-index="0"><h3>Antes de começar</h3>${list(m.setup)}</section>
-  <section class="tab-panel" data-index="1" hidden><h3>Sequência do movimento</h3>${list(m.execute)}</section>
-  <section class="tab-panel" data-index="2" hidden><h3>Leitura biomecânica</h3><p>${m.bio}</p><p class="note">A trajetória da máquina orienta o movimento, mas não substitui ajuste individual nem avaliação profissional em caso de dor.</p></section>
-  <section class="tab-panel" data-index="3" hidden><h3>Erros frequentes</h3>${list(m.errors)}</section>
-  <section class="tab-panel" data-index="4" hidden><h3>Fontes e mídia</h3><div class="resources"><a class="resource" href="${m.product}" target="_blank" rel="noopener"><small>FABRICANTE</small><b>Página oficial Matrix ↗</b></a><a class="resource" href="${m.manual}" target="_blank" rel="noopener"><small>DOCUMENTAÇÃO INCORPORADA</small><b>Abrir manual / guia técnico ↗</b></a><a class="resource" href="${m.video}" target="_blank" rel="noopener"><small>VÍDEO</small><b>Demonstração do movimento ↗</b></a></div></section>
+  <section class="tab-panel" data-index="0"><h3>Grupo muscular e função</h3><p><strong>Principal:</strong> ${m.primary}</p><p><strong>Participação:</strong> ${m.secondary}</p></section>
+  <section class="tab-panel" data-index="1" hidden><h3>Leitura biomecânica</h3><p>${m.bio}</p><p class="note">A trajetória da máquina orienta o movimento, mas não substitui ajuste individual nem avaliação profissional em caso de dor.</p></section>
+  <section class="tab-panel" data-index="2" hidden><h3>Fontes e mídia</h3><div class="resources"><a class="resource" href="${m.product}" target="_blank" rel="noopener"><small>FABRICANTE</small><b>Página oficial Matrix ↗</b></a>${m.manual?`<a class="resource" href="${m.manual}" target="_blank" rel="noopener"><small>DOCUMENTAÇÃO INCORPORADA</small><b>Abrir manual / guia técnico ↗</b></a>`:''}<a class="resource" href="${m.video}" target="_blank" rel="noopener"><small>VÍDEO</small><b>Demonstração do movimento ↗</b></a></div></section>
   </div></article>`}
 
 catalog.innerHTML=machines.map(card).join('');
